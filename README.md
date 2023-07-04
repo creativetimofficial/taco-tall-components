@@ -13,4 +13,4 @@
         }
     ],
     ```
-    After that ```composer require ct-taco/tall```
+    After that ```composer require ct_taco/tall```

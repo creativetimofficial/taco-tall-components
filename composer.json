@@ -4,7 +4,7 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "ct-taco\\tall\\": "src/"
+            "ct_taco\\tall\\": "src/"
         }
     },
     "authors": [
