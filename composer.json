@@ -1,0 +1,32 @@
+{
+    "name": "ct_taco/tall",
+    "description": "A set of Laravel Livewire components for the Tailwind CSS framework.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "ct-taco\\tall\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "UPDIVISION",
+            "email": "office@updivision.com"
+        },
+        {
+            "name": "Creative Tim",
+            "email": "hello@creative-tim.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0.2",
+        "livewire/livewire": "^2.10"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ct_taco\\tall\\ComponentsServiceProvider"
+            ]
+        }
+    }
+}
