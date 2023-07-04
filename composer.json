@@ -17,7 +17,7 @@
             "email": "hello@creative-tim.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": "^8.0.2",
         "livewire/livewire": "^2.10"
