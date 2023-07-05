@@ -13,30 +13,30 @@ class ComponentsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/views', 'tallcomponents');
-        Blade::component('tallcomponents::components/input', 'input');
-        Blade::component('tallcomponents::components/breadcrumbs', 'breadcrumbs');
-        Blade::component('tallcomponents::components/avatar', 'avatar');
-        Blade::component('tallcomponents::components/accordion', 'accordion');
-        Blade::component('tallcomponents::components/alert', 'alert');
-        Blade::component('tallcomponents::components/button', 'button');
-        Blade::component('tallcomponents::components/dialog', 'dialog');
-        Blade::component('tallcomponents::components/tooltip', 'tooltip');
-        Blade::component('tallcomponents::components/card', 'card');
-        Blade::component('tallcomponents::components/dropdown', 'dropdown');
-        Blade::component('tallcomponents::components/popover', 'popover');
-        Blade::component('tallcomponents::components/progressbar', 'progressbar');
-        Blade::component('tallcomponents::components/toast', 'toast');
-        Blade::component('tallcomponents::components/chip', 'chip');
-        Blade::component('tallcomponents::components/spinner', 'spinner');
-        Blade::component('tallcomponents::components/carousel', 'carousel');
-        Blade::component('tallcomponents::components/navbar', 'navbar');
-        Blade::component('tallcomponents::components/tabs', 'tabs');
-        Blade::component('tallcomponents::components/validation', 'validation');
-        Blade::component('tallcomponents::components/typography', 'typography');
+        $this->loadViewsFrom(__DIR__.'/views', 'ct-taco');
+        Blade::component('ct-taco::tall/input', 'input');
+        Blade::component('ct-taco::tall/breadcrumbs', 'breadcrumbs');
+        Blade::component('ct-taco::tall/avatar', 'avatar');
+        Blade::component('ct-taco::tall/accordion', 'accordion');
+        Blade::component('ct-taco::tall/alert', 'alert');
+        Blade::component('ct-taco::tall/button', 'button');
+        Blade::component('ct-taco::tall/dialog', 'dialog');
+        Blade::component('ct-taco::tall/tooltip', 'tooltip');
+        Blade::component('ct-taco::tall/card', 'card');
+        Blade::component('ct-taco::tall/dropdown', 'dropdown');
+        Blade::component('ct-taco::tall/popover', 'popover');
+        Blade::component('ct-taco::tall/progressbar', 'progressbar');
+        Blade::component('ct-taco::tall/toast', 'toast');
+        Blade::component('ct-taco::tall/chip', 'chip');
+        Blade::component('ct-taco::tall/spinner', 'spinner');
+        Blade::component('ct-taco::tall/carousel', 'carousel');
+        Blade::component('ct-taco::tall/navbar', 'navbar');
+        Blade::component('ct-taco::tall/tabs', 'tabs');
+        Blade::component('ct-taco::tall/validation', 'validation');
+        Blade::component('ct-taco::tall/typography', 'typography');
         
         $this->publishes([
-            __DIR__.'/views/components/pagination.blade.php' => resource_path('views/vendor/tallcomponents/pagination.blade.php'),
-        ], 'tallcomponents:pagination');
+            __DIR__.'/views/tall/pagination.blade.php' => resource_path('views/vendor/ct-taco/tall/pagination.blade.php'),
+        ], 'ct-taco::tall/pagination');
     }
 }

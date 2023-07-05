@@ -1,5 +1,5 @@
 {
-    "name": "ct_taco/tall",
+    "name": "ct-taco/tall",
     "description": "A set of Laravel Livewire components for the Tailwind CSS framework.",
     "type": "project",
     "autoload": {
