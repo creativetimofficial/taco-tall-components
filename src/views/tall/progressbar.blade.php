@@ -20,7 +20,7 @@
             <div 
                 @class([
                     'flex h-full items-baseline justify-center overflow-hidden break-all' => !$dropMaterial,
-                    $color ? $color : 'bg-pink-500',
+                    $color ? $color : 'bg-black',
                     $textColor ? $textColor : 'text-white',
                     $attributes->get('class')
                 ]) 

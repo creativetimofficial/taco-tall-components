@@ -15,7 +15,7 @@
             @foreach ($elements as $element)
                 @if (is_string($element))
                     <li aria-disabled="true">
-                        <a class="mx-1 flex h-9 w-9 items-center justify-center rounded-full bg-pink-500 p-0 text-sm text-white shadow-md transition duration-150 ease-in-out">{{ $element }}</a>
+                        <a class="mx-1 flex h-9 w-9 items-center justify-center rounded-full bg-black p-0 text-sm text-white shadow-md transition duration-150 ease-in-out">{{ $element }}</a>
                     </li>
                 @endif
 
@@ -23,7 +23,7 @@
                     @foreach ($element as $page => $url)
                         @if ($page == $paginator->currentPage())
                             <li id="page-{{ $page }}-current">
-                                <a class="mx-1 flex h-9 w-9 items-center justify-center rounded-full bg-pink-500 p-0 text-sm text-white shadow-md transition duration-150 ease-in-out">{{ $page }}</a>
+                                <a class="mx-1 flex h-9 w-9 items-center justify-center rounded-full bg-black p-0 text-sm text-white shadow-md transition duration-150 ease-in-out">{{ $page }}</a>
                             </li>
                         @else
                             <li id="page-{{ $page }}">

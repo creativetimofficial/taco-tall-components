@@ -21,7 +21,7 @@
             >
                 <a 
                     @class([
-                        'text-blue-gray-900 font-medium transition-colors hover:text-pink-500',
+                        'text-blue-gray-900 font-medium transition-colors hover:text-black',
                         $attributes->get('itemClass'),
                     ])
                     :href="item.url != null && item.url"
