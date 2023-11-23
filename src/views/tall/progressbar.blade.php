@@ -6,9 +6,13 @@
     'textColor' => null,
 ])
 
-<div 
-    @class([
-        'w-full' => !$dropMaterial,
+<div @class([
+    'w-full' => !$dropMaterial,
+])>
+    <div @class([
+        'flex-start flex w-full overflow-hidden rounded-sm bg-blue-gray-50 font-sans text-xs font-medium' => !$dropMaterial,
+        'h-4' => filter_var($showPercentageLabel, FILTER_VALIDATE_BOOLEAN),
+        'h-1.5' => !filter_var($showPercentageLabel, FILTER_VALIDATE_BOOLEAN),
     ])>
         <div
             @class([
@@ -30,4 +34,5 @@
                 @endif
             </div>
         </div>
+    </div>
 </div>

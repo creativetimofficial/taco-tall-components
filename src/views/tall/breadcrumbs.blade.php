@@ -3,16 +3,14 @@
     'fullLength' => false,
 ])
 
-<nav 
-    x-data="{
-        items: @js($items),
-    }" 
-    @class([
-        'w-max' => !$fullLength,
-        'block w-full' => $fullLength,
-    ])
->
-    <ol class="flex flex-wrap items-center w-full px-4 py-2 rounded-md bg-blue-gray-50 bg-opacity-60 {{ $attributes->get('class') }}">
+<nav x-data="{
+    items: @js($items),
+}" @class([
+    'w-max' => !$fullLength,
+    'block w-full' => $fullLength,
+])>
+    <ol
+        class="flex flex-wrap items-center w-full px-4 py-2 rounded-md bg-blue-gray-50 bg-opacity-60 {{ $attributes->get('class') }}">
         <template x-for="(item, index) in items">
             <li 
                 class="flex items-center font-sans text-sm antialiased font-normal leading-normal transition-colors duration-300 cursor-pointer"
@@ -28,10 +26,8 @@
                 >
                     <span x-html="item.text"></span>
                 </a>
-                <span 
-                    x-show="index != items.length - 1"
-                    class="mx-2 font-sans text-sm antialiased font-normal leading-normal pointer-events-none select-none text-blue-gray-500"
-                >
+                <span x-show="index != items.length - 1"
+                    class="mx-2 font-sans text-sm antialiased font-normal leading-normal pointer-events-none select-none text-blue-gray-500">
                     /
                 </span>
             </li>
