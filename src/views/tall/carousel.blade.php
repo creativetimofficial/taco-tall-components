@@ -1,7 +1,7 @@
 @props([
     'data' => [],
 ])
-<div class="grid" x-data="{ activeSlide: 1, slides: @js($data)}">
+<div class="grid" x-data="{ activeSlide: 1, slides: @js($data) }">
     <div class="mx-auto relative">
 
         <!-- Slides -->
@@ -33,11 +33,12 @@
         <div class="absolute w-full flex items-center justify-center px-4">
             <template x-for="slide in slides" :key="slide.id">
                 <button
-                    class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:bg-teal-600 hover:shadow-lg"
+                    class="flex-1 w-4 h-2 mt-4 mx-2 mb-0 rounded-full overflow-hidden transition-colors duration-200 ease-out hover:shadow-lg"
                     :class="{
                         'bg-[#e91e63]': activeSlide === slide.id,
                         'bg-gray-500/20': activeSlide !== slide.id
-                    }" x-on:click="activeSlide = slide.id"></button>
+                    }"
+                    x-on:click="activeSlide = slide.id"></button>
             </template>
         </div>
     </div>
